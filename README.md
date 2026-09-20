@@ -15,7 +15,7 @@ In the construction industry, all types of submittals are returned by consultant
 ### 1. Universal Approval Extraction (Native Digital PDFs)
 * **Vector Geometry Detection:** Rather than relying on heavy OCR, the engine utilizes `PyMuPDF` to instantly scan digital (native) PDFs for specific vector shapes (e.g., bounding boxes or rectangles) drawn by consultants, **regardless of the markup color used**.
 * **Coordinate-Based Text Extraction:** Once a markup boundary is detected, the engine calculates the coordinates and extracts the text (A, B, C, or D) located within or immediately adjacent to the bounding box.
-* **Submittal Agnostic:** Works flawlessly across any document type (QC, IR, MIR, RFIs) as long as it is a native digital PDF.
+* **Submittal Agnostic:** Works on any native digital PDF, regardless of submittal type (QC, IR, MIR, RFIs) as long as it is a native digital PDF.
 * **Auto-Logging:** Generates a fully styled `openpyxl` Excel tracker detailing the file name, revision, and the spatially extracted Code (color-coded in the Excel sheet for quick visual sorting).
 
 ### 2. Intelligent Nomenclature Engine (Folder & Archive Renamer)
